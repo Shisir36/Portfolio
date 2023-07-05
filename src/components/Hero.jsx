@@ -1,6 +1,7 @@
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
+import { FaDownload } from 'react-icons/fa';
 const Hero = () => {
   const { hero } = content;
 
@@ -22,7 +23,8 @@ const Hero = () => {
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2>{hero.title}</h2>
           <br />
-          <div className="flex justify-end">
+          <div className="flex justify-end gap-4">
+            <a href="/public/file/Al Mamun Shisir.pdf" className=" btn" download >Download CV <FaDownload/></a>
             <button className="btn">{hero.btnText}</button>
           </div>
           <div className="flex flex-col gap-10 mt-10">
@@ -42,7 +44,7 @@ const Hero = () => {
         </div>
 
         {/* sec col */}
-        <div className="md:h-[37rem] h-96">
+        <div className="md:h-[37rem] h-96 lg:ml-24">
           <img
             src={hero.image}
             data-aos="slide-up"

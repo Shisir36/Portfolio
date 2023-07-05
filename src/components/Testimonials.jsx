@@ -42,15 +42,15 @@ const Testimonials = () => {
             <SwiperSlide key={i}>
               <div
                 className={` duration-500 bg-bg_light_primary mx-8 border-2 
-              p-8 h-full rounded-2xl flex items-center gap-6
+              md:p-8 px-1 h-full rounded-2xl flex items-center gap-6
                border-slate-200 md:flex-row flex-col
                 ${activeIndex !== i && "scale-75 blur-sm"}`}
               >
                 <img src={content.img} alt="..." className="h-24" />
                 <div>
-                  <p className="sm:text-base text-sm">{content.review}</p>
+                  <p className="sm:text-base text-sm md:text-left text-center">{content.review}</p>
                   <br />
-                  <h6>{content.name}</h6>
+                  <h6 className=" md:text-left text-center">{content.name}</h6>
                 </div>
               </div>
             </SwiperSlide>

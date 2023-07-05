@@ -2,6 +2,7 @@ import { createElement, useRef } from "react";
 import { content } from "../Content";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const { Contact } = content;
@@ -13,7 +14,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
+      'service_sw85s1k', 'template_o7rn1cm', form.current, 'UnEXyTkkD53mnP3Y7'
       )
       .then(
         (result) => {
@@ -91,6 +92,9 @@ const Contact = () => {
                 </a>
               </div>
             ))}
+             <a  data-aos="fade-down" href="https://www.linkedin.com/in/al-mamun-shisir-69659923b" className=" inline-flex items-center gap-2">
+               <FaLinkedin className=" h-9 w-9"></FaLinkedin> WebGenius
+               </a>
           </div>
         </div>
       </div>
