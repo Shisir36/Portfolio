@@ -24,7 +24,7 @@ const Hero = () => {
           <h2>{hero.title}</h2>
           <br />
           <div className="flex justify-end gap-4">
-            <a href="/public/file/Al Mamun Shisir.pdf" className=" btn" download >Download CV <FaDownload/></a>
+            <a href="https://drive.google.com/file/d/1Yi1gSHsssIWUXwc9e-7plWOmQtBwFSuV/view" className=" btn" download >Download Resume <FaDownload/></a>
             <button className="btn">{hero.btnText}</button>
           </div>
           <div className="flex flex-col gap-10 mt-10">
